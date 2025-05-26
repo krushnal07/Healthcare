@@ -1,12 +1,62 @@
-# React + Vite
+# HealthCare
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Displays a series of health status cards with titles, dates, statuses, and an optional image.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+*   Shows multiple health cards from data.
+*   Each card displays title, date, status (dot + text), and a "more options" icon.
+*   **Images**:
+    *   1st card: `lungs.png`
+    *   2nd card: `bone.png`
+    *   3rd card: `Theeth.jpg` (or `Teeth.jpg`)
+*   Styled with `HealthStatusCards.css`.
 
-## Expanding the ESLint configuration
+## Setup
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1.  **Files**:
+    *   `src/components/HealthStatusCards.js`
+    *   `src/components/HealthStatusCards.css` (Create or use existing)
+    *   Images (`lungs.png`, `bone.png`, `Theeth.jpg`) in `src/assets/images/` (adjust paths in JS if different).
+2.  **Install Dependencies**:
+    ```bash
+    npm install lucide-react
+    # or
+    yarn add lucide-react
+    ```
+
+## Usage
+
+1.  **Import**:
+    ```javascript
+    import HealthStatusCards from './components/HealthStatusCards';
+    ```
+2.  **Data**: Pass a `cards` prop (array of objects):
+    ```javascript
+    const healthData = [
+      { id: 1, title: 'Lungs', date: '2023-10-26', statusColor: 'green', statusText: 'Normal' },
+      { id: 2, title: 'Bones', date: '2023-10-20', statusColor: 'orange', statusText: 'Checkup Due' },
+      // ... more cards
+    ];
+    ```
+3.  **Render**:
+    ```jsx
+    <HealthStatusCards cards={healthData} />
+    ```
+
+## Props
+
+*   `cards` (Array, **Required**): Array of card objects. Each object needs `id`, `title`, `date`, `statusColor`, `statusText`.
+
+## Styling
+
+Customize appearance in `HealthStatusCards.css`. Key classes:
+*   `.health-status-cards-container`
+*   `.health-status-card`
+*   `.card-header`, `.health-card-title`, `.card-image`, `.more-icon`
+*   `.health-card-date`, `.health-card-status`, `.status-dot`
+
+## Notes
+*   Verify image paths in `HealthStatusCards.js`.
+*   Consider renaming `Theeth.jpg` to `Teeth.jpg` if it's a typo.
+*   For more dynamic images, modify the component to accept an `imageSrc` in each card data object.
