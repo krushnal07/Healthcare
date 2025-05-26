@@ -1,0 +1,126 @@
+.calendar-view {
+
+  width: 400px;
+  height: 650px;
+}
+
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.calendar-month-year {
+  font-size: 17px;
+  font-weight: 600;
+  color: var(--design-text-dark);
+  margin: 0;
+}
+
+.calendar-nav {
+  display: flex;
+  gap: 10px;
+}
+
+.nav-arrow {
+  color: var(--design-text-medium);
+  cursor: default; 
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 1px;
+  background-color: var(--design-card-border); 
+  border: 1px solid var(--design-card-border);
+  border-radius: 8px;
+  overflow: hidden; 
+}
+
+.calendar-day-name,
+.calendar-day {
+  padding: 4px;
+  text-align: center;
+  background-color: var(--white);
+  font-size: 7px;
+}
+
+.calendar-day-name {
+  font-weight: 600;
+  color: var(--design-text-medium);
+  background-color: var(--calendar-header-bg); 
+}
+
+.calendar-day {
+  min-height: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  color: var(--design-text-dark);
+}
+.calendar-day.empty {
+  background-color: var(--design-gray-background);
+}
+
+.calendar-day span {
+  margin-bottom: 2px;
+  font-weight: 500;
+}
+
+.calendar-appointment-time {
+  background-color: var(--design-primary-blue);
+  color: var(--white);
+  font-size: 10px;
+  padding: 2px 6px;
+  border-radius: 10px;
+  margin-top: 4px;
+  font-weight: 500;
+}
+
+.detailed-appointments {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.detailed-appointment-card {
+  display: flex;
+  align-items: center;
+  background-color: var(--white);
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid var(--design-card-border);
+  border-left-width: 4px;
+  box-shadow: var(--box-shadow-light);
+}
+
+.appt-icon-wrapper {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 12px;
+  
+}
+
+.appt-info {
+  flex-grow: 1;
+}
+
+.appt-type {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--design-text-dark);
+  margin-bottom: 2px;
+}
+
+.appt-name-time {
+  font-size: 12px;
+  color: var(--design-text-medium);
+}
+

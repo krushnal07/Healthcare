@@ -1,0 +1,27 @@
+.dashboard-main-content {
+  flex-grow: 1;
+  padding: 10px;
+ 
+  height: 650px; 
+}
+
+.content-row {
+  display: flex;
+  gap: 5px;
+}
+
+.main-column {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.side-column {
+ 
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+
+

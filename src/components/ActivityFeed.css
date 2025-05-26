@@ -1,0 +1,41 @@
+
+
+.activity-summary {
+  font-size: 13px;
+  color: var(--design-text-medium);
+  margin-top: -10px; 
+  margin-bottom: 5px;
+}
+
+.activity-chart {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  height: 20px;
+
+}
+
+.chart-bar-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-grow: 1; 
+}
+.bar-image{
+    width:200px;
+    height: 110px;
+}
+
+.chart-bar {
+  width: 12px; 
+  background-color: var(--design-primary-blue);
+  border-radius: 4px 4px 0 0; 
+  transition: height 0.3s ease;
+}
+
+.chart-label {
+  font-size: 11px;
+  color: var(--design-text-light);
+  margin-top: 6px;
+}
+

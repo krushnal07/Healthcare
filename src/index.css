@@ -1,0 +1,58 @@
+:root {
+  --primary-blue: #007bff;
+  --light-blue-bg: #e7f1ff;
+  --text-dark: #1A2E44;
+  --text-light: #5A6B80;
+  --text-lighter: #8FA0B4;
+  --border-color: #E0E5EC;
+  --background-color: #F7F8FA;
+  --white: #FFFFFF;
+  --green-status: #28A745;
+  --red-status: #DC3545;  
+  --calendar-header-bg: #F0F4F8;
+  --calendar-day-border: #DDE4ED;
+  --box-shadow-light: 0px 4px 12px rgba(0, 0, 0, 0.05);
+  --box-shadow-strong: 0px 6px 16px rgba(0, 0, 0, 0.08);
+
+  
+  --design-primary-blue: #4A90E2; 
+  --design-light-blue-bg: #F0F7FF;
+  --design-text-dark: #333B44;
+  --design-text-medium: #707B86;
+  --design-text-light: #A0AEC0;
+  --design-green: #50E3C2; 
+  --design-red: #D0021B;
+  --design-gray-background: #F5F7FA;
+  --design-card-border: #ECEFF3;
+  --design-sidebar-text: #626E7C;
+}
+
+body {
+  margin: 0;
+  font-family: 'Manrope', sans-serif;
+  background-color: var(--design-gray-background);
+  color: var(--design-text-dark);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #a1a1a1;
+}

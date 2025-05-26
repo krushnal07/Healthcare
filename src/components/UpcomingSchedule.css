@@ -1,0 +1,15 @@
+
+
+.schedule-day-group {
+  margin-bottom: 16px;
+}
+.schedule-day-group:last-child {
+  margin-bottom: 0;
+}
+
+.schedule-day-title {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--design-text-medium);
+  margin-bottom: 10px;
+}
